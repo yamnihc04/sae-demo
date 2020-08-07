@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DASHBOARD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<h1>Welcome to SAE DASHBOARD!</h1>
+
+<input type="button" name="startCheckScore" id="startCheckScore" value="Click here to analyse your interest!"></input> <br><br><br>
+
+<input type="button" class="logout hide" id="logoutbutton" onClick="goToSignout();"  value="Logout"></input><br><br>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+
+<script>
+  // TODO: Replace the following with your app's Firebase project configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyDwi4kQ-YNvprrSKH96wSVMQ0McH-NuzBc",
+  authDomain: "sae-front.firebaseapp.com",
+  databaseURL: "https://sae-front.firebaseio.com",
+  projectId: "sae-front",
+  storageBucket: "sae-front.appspot.com",
+  messagingSenderId: "981008729708",
+  appId: "1:981008729708:web:c08f66afb0b957ec2a3a49"
+};
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  console.log('firebaseConfig initialized');
+
+</script>
+<script src="js/dashboard.js"></script>
+
+
+
+<script>
+    alert('Welcome to SAE Dashboard');
+  </script>
+
+
+</body>
+</html>

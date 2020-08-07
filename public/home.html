@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student Analytics Engine</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href = "css/semantic/semantic.css">
+<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+
+<!--Start: Nav  -->
+<div class="ui fixed borderless huge menu">
+  
+  <div class="ui container grid">
+    
+    <!--Start: Desktop Nav-->
+    <div class="computer only row">
+      <a href="home.html" class="header item">Student Analytics Engine</a>
+      <a class="active item" href="home.html">Home</a>
+      <a class="item" href="team.html">Team</a>
+      <!-- <a class="item">Contact</a> -->
+      
+      <div class="right menu">
+        <a id="loginMenu" class="ui dropdown item">Login<i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item" id="loginItem" onClick="goToLogin();"> 
+              <i class="sign-in icon">Login</i>
+              
+            </div>
+            <div class="item" id="signupItem" onClick="goToSignup();">
+              <i class="user plus icon">  Signup</i>              
+            </div>
+            </div>
+        </a>
+        <div class="item" id="signoutTag" onClick="goToSignout();" >
+          Signout
+        </div>
+        
+      </div>
+    </div>
+    <!--End: Desktop Nav-->
+    
+    <!-- <div class="tablet mobile only row">
+      <a class="header item"> Project Name</a>
+      <div class="right menu">
+        <a class="menu item">
+          <div class="ui basic icon toggle button">
+            <i class="content icon"></i>
+          </div>
+        </a>
+      </div>
+      <div class="ui vertical accordion borderless fluid menu">
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+        <a class="active item"> Home</a>
+        <a class="item"> About</a>
+        <a class="item"> Contact</a>
+        <div class="item">
+          <div class="title">
+            Dropdown<i class="dropdown icon"></i>
+          </div>
+          <div class="content">
+            <div class="item">
+              Action
+            </div>
+            <div class="item active">
+              Another action
+            </div>
+            <div class="item">
+              Something else here
+            </div>
+            <div class="ui divider"></div>
+            <div class="header item">
+              Navbar header
+            </div>
+            <div class="item">
+              Seperated link
+            </div>
+            <div class="item">
+              One more seperated link
+            </div>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <a class="item" href="#">Default</a>
+        <a class="item" href="#">Static top</a>
+        <a class="active item" href="#">Fixed top</a>
+      </div>
+    </div> -->
+  </div>
+</div>
+<!--End: Nav  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui text container">
+      <h1 class="ui inverted header">Student Analytics Engine</h1>
+      <h2>We help you understand your career domain!</h2>
+      <div id="getStartedButtonDiv" class="ui huge primary button">
+        <a id="getStartedButton"  href="signup.html">Get Started <i class="right arrow icon"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Overview</h3>
+          <p>
+            Students nowadays are getting confused on what to learn or which path to choose for an
+            outstanding career. As there are thousands of increasing options in career especially in the
+            software industry, there is a need that each student has a perfect guiding path with
+            milestones in the way to their respective careers.
+          </p><p>
+            Just by keeping different career options students don’t get a clear idea about what is best or
+            suitable for their type of interest in the career. As per our last discussion, we will be
+            shortlisting all domains available in 4 different domains like ML, IOT, etc. and expert
+            teachers in those respective domains will be assigned to guide students under their domain
+            through this software.
+          </p>
+          <h3 class="ui header">We Make Bananas That Can Dance</h3>
+          <p>
+            Yes that's right, you thought it was the stuff of dreams, but
+            even bananas can be bioengineered.
+          </p>
+        </div>
+        <div class="six wide right floated column">
+          <img
+            class="ui large bordered rounded image"
+            src="images/homeml.jpg"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+          <a class="ui huge button">Check Them Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <h3>"What a Company"</h3>
+          <p>That is what they all say about us</p>
+        </div>
+        <div class="column">
+          <h3>"I shouldn't have gone with their competitor."</h3>
+          <p>
+            <!-- <img
+              class="ui avatar image"
+              src="./static/images/avatar/nan.jpg"
+            /> -->
+            <b>Nan</b> Chief Fun Officer Acme Toys
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+      <p>
+        Instead of focusing on content creation and hard work, we have
+        learned how to master the art of doing nothing by providing massive
+        amounts of whitespace and generic content that can seem massive,
+        monolithic and worth your attention.
+      </p>
+      <a class="ui large button">Read More</a>
+      <h4 class="ui horizontal header divider">
+        <a href="#root"> Case Studies</a>
+      </h4>
+      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+      <p>
+        Yes I know you probably disregarded the earlier boasts as
+        non-sequitur filler content, but its really true. It took years of
+        gene splicing and combinatory DNA research, but our bananas can
+        really dance.
+      </p>
+      <a class="ui large button">I'm Still Quite Interested</a>
+    </div>
+  </div>
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div
+        class="ui stackable inverted divided equal height stackable grid"
+      >
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a class="item" href="#root">Sitemap</a>
+            <a class="item" href="#root">Contact Us</a>
+            <a class="item" href="#root">Religious Ceremonies</a>
+            <a class="item" href="#root">Gazebo Plans</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a class="item" href="#root">Banana Pre-Order</a>
+            <a class="item" href="#root">DNA FAQ</a>
+            <a class="item" href="#root">How To Access</a>
+            <a class="item" href="#root">Favorite X-Men</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>
+            Extra space for a call to action inside the footer that could
+            help re-engage users.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+
+<script>
+  // TODO: Replace the following with your app's Firebase project configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyDwi4kQ-YNvprrSKH96wSVMQ0McH-NuzBc",
+  authDomain: "sae-front.firebaseapp.com",
+  databaseURL: "https://sae-front.firebaseio.com",
+  projectId: "sae-front",
+  storageBucket: "sae-front.appspot.com",
+  messagingSenderId: "981008729708",
+  appId: "1:981008729708:web:c08f66afb0b957ec2a3a49"
+};
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  console.log('firebaseConfig initialized');
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src = "css/semantic/semantic.js"></script>
+<script src="js/home_ui.js"></script>
+<script src="js/home.js"></script>
+
+
+
+
+
+</body>
+</html>
